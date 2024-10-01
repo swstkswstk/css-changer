@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --padding: 20px;
+  --blur: 0px;
+  --base: rgb(3, 2, 0);
+  --width: 50%;
+  --border-radius: 15px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  border-radius: 15px;
+  background: linear-gradient(to right, rgb(197, 253, 137), rgb(242, 134, 222));
+  box-shadow: -10px -7px 5px rgb(145, 72, 72);
+  padding: 0.2rem;
+}
+
+h1 {
+  font-size: 2.05rem;
+}
+
+.heading {
+  font-size: 2rem;
+  color: var(--base);
+  font-weight: 700;
+}
+
+.hh {
+  margin-bottom: 1rem;
+}
+
+.css-controller {
+  display: flex;
+  padding: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding: 1rem 0; */
+}
+
+label {
+  padding-left: 1rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+img {
+  width: var(--width);
+  height: 80%;
+  padding: var(--padding);
+  filter: blur(var(--blur)); /* Fixed filter syntax */
+  background-color: var(--base); /* Using base as background color */
+  border-radius: var(--border-radius);
+  transition: filter 0.3s ease, background-color 0.3s ease; /* Fixed typo in 'background-color' */
+}
+
+
+
+.css-controller input[type="range"] {
+  width: 100%;
+}
